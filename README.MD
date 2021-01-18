@@ -11,10 +11,6 @@ Configurar documento database/index.js com as credencias banco de dados
 
 Instalar as seguintes bibliotecas:
 
-Node Js
-```bash
-npm add nodejs
-```
 Cors
 ```bash
 npm install cors

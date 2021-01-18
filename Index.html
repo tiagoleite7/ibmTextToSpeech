@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Teste Smarkio</title>
+</head>
+
+<body> 
+    <div class="col-md-6">
+        <div class="col-sm-8">
+        <form id="form" method="POST">
+            <label for="txtComentario" class="form-label">Comentario</label>
+            <textarea class="form-control" id="txtComentario" rows="3" maxlength="250" required="required"></textarea>
+            <br>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary mb-2">Cadastrar</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="col-md-6"> 
+
+        <table class="table table-borderless">
+            <tbody id = 'tblComentario'>
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/incluir.js"></script> 
+    <script src="scripts/listar.js"></script>
+</body>
+
+</html>

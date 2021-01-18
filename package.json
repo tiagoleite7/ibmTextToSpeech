@@ -1,0 +1,22 @@
+{
+  "name": "Teste_Smarkio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "curl": "^0.1.4",
+    "ibm-watson": "^6.0.0",
+    "nodejs": "0.0.0",
+    "request": "^2.88.2",
+    "sass": "^1.32.4",
+    "sequelize": "^6.3.5"
+  }
+}

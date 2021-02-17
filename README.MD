@@ -11,7 +11,8 @@ Configurar .env com as credencias banco de dados e a porta que será utilizada
 
 Instalar as bibliotecas com comando:
 ```bash
-"npm i" 
+"npm i"
+"npm i mysql2"
 ```
 
 Executar no terminal de comando 

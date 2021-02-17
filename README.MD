@@ -9,7 +9,7 @@ Criar base de dados MySQL com o nome "comentarios"
 Configurar .env com as credencias banco de dados e a porta que será utilizada
 
 
-Instalar as seguintes bibliotecas:
+Instalar as bibliotecas com comando:
 ```bash
 npm i 
 ```

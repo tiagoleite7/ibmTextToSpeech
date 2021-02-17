@@ -11,13 +11,7 @@ Configurar .env com as credencias banco de dados e a porta que será utilizada
 
 Instalar as seguintes bibliotecas:
 ```bash
-npm i cors
-npm i body-parser
-npm i express
-npm i express dotenv
-npm i mysql2
-npm i ibm-watson@^6.0.0
-npm i Sequelize
+npm i 
 ```
 
 Executar no terminal de comando "npm init -y"

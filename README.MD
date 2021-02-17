@@ -11,13 +11,14 @@ Configurar .env com as credencias banco de dados e a porta que será utilizada
 
 Instalar as bibliotecas com comando:
 ```bash
-npm i 
+"npm i" 
 ```
 
-Executar no terminal de comando "npm init -y"
-
-Executar no terminal de comando "node (Diretório do arquivo src/index.js)"
-
+Executar no terminal de comando 
+```bash
+"npm init -y"
+"node (Diretório do arquivo src/index.js)"
+```
 
 ## Como Usar
 

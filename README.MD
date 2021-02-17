@@ -1,4 +1,4 @@
-# introdução
+# Introdução
 
 Aplicação com o intuito de realizar a leitura dos comentarios digitados, realizando reprodução na tela do que foi digitado
 
@@ -6,37 +6,22 @@ Aplicação com o intuito de realizar a leitura dos comentarios digitados, reali
 
 Criar base de dados MySQL com o nome "comentarios"
 
-Configurar documento database/index.js com as credencias banco de dados
+Configurar .env com as credencias banco de dados e a porta que será utilizada
 
 
 Instalar as seguintes bibliotecas:
-
-Cors
 ```bash
-npm install cors
-```
-Body-Parser
-```bash
-npm install body-parser
-```
-Express
-```bash
-npm install express
-```
-MySQL
-```bash
-npm install mysql2
-```
-IBM Watson
-```bash
-npm install ibm-watson@^6.0.0
-```
-Sequelize
-```bash
-npm install Sequelize
+npm i cors
+npm i body-parser
+npm i express
+npm i express dotenv
+npm i mysql2
+npm i ibm-watson@^6.0.0
+npm i Sequelize
 ```
 
 Executar no terminal de comando "npm init -y"
+
 Executar no terminal de comando "node (Diretório do arquivo src/index.js)"
 
 
@@ -46,4 +31,3 @@ Executar no terminal de comando "node (Diretório do arquivo src/index.js)"
 `
 Acessar Index.html contido na raiz para inserir, enviar e ouvir comentario 
 `
-

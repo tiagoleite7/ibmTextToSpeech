@@ -13,7 +13,6 @@ router.post('/incluir', async (req, res) => {
             mensagem: createdComent.comentario
         })
     } catch (erro) {
-        console.log(erro)
         return res.status(400).send('Erro é:' + erro)
     }
 })

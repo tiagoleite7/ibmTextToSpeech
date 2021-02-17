@@ -1,7 +1,6 @@
 var ajax = new XMLHttpRequest()
 ajax.open("GET", "http://localhost:3000/comentario/listar")
 ajax.send()
-//console.log(ajax)
 
 ajax.onreadystatechange = function () {
     if (ajax.readyState == 4) {

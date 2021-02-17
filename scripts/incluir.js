@@ -39,7 +39,7 @@ function criarEReproduzirAudio(mensagem, id) {
     ajax.open("POST", "http://localhost:3000/comentario/criarAudio")
     ajax.setRequestHeader('Content-Type', 'application/json')
 
-    console.log(nomeArquivo)
+
     let comentarioCriado = {
         comentario: mensagem,
         nomeArquivo: id

@@ -6,7 +6,7 @@ Aplicação com o intuito de realizar a leitura dos comentarios digitados, reali
 
 Criar base de dados MySQL com o nome "comentarios"
 
-Configurar .env com as credencias banco de dados e a porta que será utilizada
+Configurar .env com as credencias banco de dados
 
 
 Instalar as bibliotecas com comando:

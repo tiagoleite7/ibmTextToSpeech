@@ -15,9 +15,8 @@ Instalar as bibliotecas com comando:
 "npm i mysql2"
 ```
 
-Executar no terminal de comando 
+Iniciar o servidor no terminal de comando 
 ```bash
-"npm init -y"
 "node (Diretório do arquivo src/index.js)"
 ```
 

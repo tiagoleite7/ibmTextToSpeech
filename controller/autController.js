@@ -2,13 +2,12 @@ const express = require('express')
 const { db } = require('../database/index')
 const { criaMensagem, criarAudio } = require('../ibm/ibmSynthesize')
 const router = express.Router()
+const fs = require("fs")
 
 router.post('/incluir', async (req, res) => {
     try {
         const body = await req.body
         const createdComent = await db.Comentario.create(body)
-        const synthesizeParams = await criaMensagem(body.comentario)
-        const createdAudio = await criarAudio(synthesizeParams, createdComent.id)
         res.status(200).send({
             id: createdComent.id,
             mensagem: createdComent.comentario
@@ -22,9 +21,17 @@ router.post('/incluir', async (req, res) => {
 router.post('/criarAudio', async (req, res) => {
     try {
         const body = req.body
-        synthesizeParams = await criaMensagem(body.comentario)
-        await criarAudio(synthesizeParams,body.nomeArquivo)
-        return res.status(200).send('Audio criado Corretamente')
+        fs.stat (`audio/${body.nomeArquivo}.wav`,async (error, stats)=>{
+            if(error){
+                synthesizeParams = await criaMensagem(body.comentario)
+                await criarAudio(synthesizeParams,body.nomeArquivo)
+                return res.status(200).send('Audio criado Corretamente')
+            }
+            else{
+                return res.status(200).send('O Arquivo já existe')
+            }
+        })
+
     } catch (erro) {
         return res.status(400).send(`O Erro é: ${erro}`)
     }
